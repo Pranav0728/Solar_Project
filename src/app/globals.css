@@ -8,6 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: europa;
+  src: url(../assets/EuropaGroteskSH-Reg.otf);
+}
+@font-face {
+  font-family: helvet;
+  src: url(../assets/Helvetica.ttf);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,6 +23,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +39,65 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.landingpage{
+  background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169));
+}
+
+.indiv{
+  background: url(../assets/aboutnew.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+}
+.indiv::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.indiv h2{
+  font-size: 5vw;
+  max-width: 60%;
+  line-height: 100%;
+  font-family: europa;
+  z-index: 5;
+  
+}
+.downbutton{
+  border: 2px solid white;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.page2imgdiv{
+  background: url(../assets/aboutnew.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+}
+
+.page2{
+  
+  h2{
+   font-size:30px ;
+   font-weight: 200;
+   font-family: Helvet;
+  }
+  p{
+    font-size: 25px;
+    max-width: 90%;
+   
+  }
+}
+.page3{
+  background-image: linear-gradient( rgb(211, 191, 169), rgb(228, 164, 85) );
+
 }
