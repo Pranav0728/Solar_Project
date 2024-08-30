@@ -25,6 +25,57 @@
 }
 
 
+/* OnScroll Animation  */
+.hidden1{
+  opacity:0;
+  /* filter:blur(5px); */
+  transform:translateY(100px);
+  transition:all 2s;
+}
+.hidden2{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform: translateX(-50%);
+    transition:all 1s;
+  }
+
+.hidden3{
+  opacity:0;
+  /* filter:blur(5px); */
+  transform: translateX(-100%);
+  transition:all 1s;
+  }
+  .hidden4{
+    opacity:0;
+    /* filter:blur(5px); */
+    transform: translateX(-150%);
+    transition:all 1s;
+    }
+  
+
+.show{
+opacity:1;
+filter:blur(0);
+transform:translateY(0px);
+}
+
+.showleftSlider{
+
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0%);
+
+}
+
+.rightSlider{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0px);
+
+}
+/* ## */
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

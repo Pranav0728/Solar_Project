@@ -1,9 +1,33 @@
+"use client";
+import { useState, useEffect } from "react";
+import OnScrollAnimation from "./OnScrollAnimmation";
+
 export default function Landingpage2() {
+  //On Scroll Animation Function
+  useEffect(() => {
+		if (typeof document !== 'undefined') {
+			// will run in client's browser only
+			var hiddenElements1 = document.querySelectorAll(".hidden3");
+			var hiddenElements = document.querySelectorAll(".hidden2");
+			var hiddenElement2 = document.querySelectorAll(".hidden1");
+			var hiddenElement3 = document.querySelectorAll(".hidden4");
+	
+			//   var hiddenElement2 = document.querySelectorAll(".hidden3");
+			// console.log(hiddenElements);
+			OnScrollAnimation(hiddenElements1)
+			OnScrollAnimation(hiddenElements)
+			OnScrollAnimation(hiddenElement2)
+			OnScrollAnimation(hiddenElement3)
+	
+			//    OnScrollAnimation(hiddenElement2)
+		}
+       
+    }, []);
     return (
       <>
       <div className=" w-[100%] h-[100vh] landingpage p-11 page2">
           <div className="w-[100%] h-[100%]  flex   rounded-2xl relative overflow-hidden p-8 pl-14 bg-white">
-           <div className="h-[100%] w-[60%]">
+           <div className="h-[100%] w-[60%] hidden3">
             <h3 className="font-thin">MISSION</h3>
             <h2 className="text-black font-semibold mt-[2%] mb-[2%]">About us</h2>
             <p className="font-thin">
@@ -14,7 +38,7 @@ export default function Landingpage2() {
             </div>
          
            </div>
-           <div className="h-[100%] w-[40%] mt-[1%]  rounded-2xl page2imgdiv " ></div>
+           <div className="h-[100%] w-[40%] mt-[1%] hidden2 rounded-2xl page2imgdiv " ></div>
           </div>
       </div>
       </>
