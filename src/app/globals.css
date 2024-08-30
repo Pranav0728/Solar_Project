@@ -87,9 +87,9 @@ body {
 .page2{
   
   h2{
-   font-size:30px ;
-   font-weight: 200;
-   font-family: Helvet;
+    font-size: 45px;
+    font:helvet;
+    font-weight: 200;
   }
   p{
     font-size: 25px;
@@ -99,5 +99,72 @@ body {
 }
 .page3{
   background-image: linear-gradient( rgb(211, 191, 169), rgb(228, 164, 85) );
+   box-shadow: 0px -30px 30px 10px rgb(210, 193, 173) inset;
+}
+.inpage3{
+  background: url(../assets/getquote.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.inpage3::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.inpage3 h3{
+  position: relative;
+  
+}
+.inpage3 h2{
+    z-index: 5;
+    font-size: 50px;
+    position: relative;
+    font-family: helvet;
+    
+}
+.inpage3 p{
+  max-width: 40%;
+   font-size: 20px;
+   position: absolute;
+   z-index: 5;
+   font:helvet;
+   bottom: 10%;
+   color: rgba(255,255,255,0.9);
+  
+}
+.footer{
+  background-color: rgb(206, 205, 201);
+}
+.infoot{
+  background-color:  rgb(196, 159, 131);
+}
 
+.landpage4{
+  background:linear-gradient( to bottom,rgb(209, 193, 174), rgb(228, 164, 87) ,rgb(210, 192, 171));
+}
+.landing4{
+  h2{
+    font-size: 45px;
+    font:helvet;
+    font-weight: 200;
+  }
+}
+.helvetfont{
+  font-size: 45px;
+    font:helvet;
+    font-weight: 200;
+}
+.landing4 p{
+  max-width: 40%;
+}
+.page4img{
+
+  border-radius: 5%;
 }
