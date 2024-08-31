@@ -60,8 +60,8 @@ export default function Landingpage4() {
                 <h2>{feature.headline}</h2>
                 <p className="font-light text absolute bottom-10" >{feature.paragraph}</p>
              </div>
-             <div className=" w-[40%] h-[100%]  page4img overflow-hidden " >
-             <Image src={feature.src} height={1000} width={1000} alt="" className="h-[100%] w-[100%] hidden2 " />;
+             <div className=" w-[40%] h-[100%]  page4img overflow-hidden hidden2" >
+             <Image src={feature.src} height={1000} width={1000} alt="" className="h-[100%] w-[100%]  " />;
   
              </div>
           </div>))}

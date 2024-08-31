@@ -7,7 +7,18 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+.menuItems{
+  display: none;
+}
+.Sub-SideNav{
+  display: none;
+}
+.Sub-SideNav-on-click{
+  display: none;
+}
+.HamBurgerIcon{
+  display: none;
+}
 @font-face {
   font-family: europa;
   src: url(../assets/EuropaGroteskSH-Reg.otf);
@@ -24,6 +35,27 @@
   }
 }
 
+.is-sticky {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  position: fixed;
+
+  /* z-index: 999; */
+  display: flex;
+  align-items: center;
+  height: 10%;
+  /* background: linear-gradient(135deg, rgba(17, 13, 29, 0.1), rgba(22, 18, 37, 0.1)); */
+  /* background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169)); */
+  background-color: rgb(228, 164, 85) ;
+
+  
+  /* animation: 1s ease-in 500ms normal none 1 running fade-down; */
+  /* padding-top: 0px;
+  padding-bottom: 0px; */
+  transition: 500ms;
+
+
+}
 
 /* OnScroll Animation  */
 .hidden1{
@@ -75,16 +107,11 @@ transform:translateY(0px);
 }
 /* ## */
 
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.header{
+  width: 50%;
 }
+
+
 
 @layer utilities {
   .text-balance {
@@ -219,3 +246,7 @@ body {
 
   border-radius: 5%;
 }
+
+
+
+
