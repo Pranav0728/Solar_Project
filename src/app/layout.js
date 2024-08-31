@@ -1,7 +1,31 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Courgette } from 'next/font/google';
+import { Rokkitt } from 'next/font/google';
+import { Oswald } from 'next/font/google';
+import Header from "@/components/Header";
+import Footer from "@/components/footer";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
+const courgette = Courgette({ 
+  subsets: ['latin'],
+  weight: ['400'],
+  preload: false,
+})
+
+const oswald  = Oswald ({ 
+  subsets: ['latin'],
+  weight: ['300'],
+  preload: false,
+})
+const rokkitt  = Rokkitt ({ 
+  subsets: ['latin'],
+  weight: ['400'],
+  preload: false,
+})
+
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +35,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="w-full flex justify-center flex-col items-center" >
+        <Header />
+        <div className={courgette.className}>{children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
