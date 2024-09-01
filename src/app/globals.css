@@ -34,6 +34,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+body{
+  background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169));
+
+
+}
 
 .is-sticky {
   backdrop-filter: blur(50px);

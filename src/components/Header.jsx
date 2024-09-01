@@ -38,7 +38,7 @@ export default  function Header() {
   }, );
 
   return (
-    <div className="fixed Header w-[95%] header-section top-0 flex justify-center mt-5 z-50 border rounded-[10rem]  lg:backdrop-blur-sm">
+    <div className=" Header w-[95%] header-section top-0 flex justify-center mt-5 z-50 border rounded-[10rem]  lg:backdrop-blur-sm">
       <div className="lg:h-[10.5vh] h-[11vh] w-full  flex justify-between items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div className="flex items-center gap-2 w-[20rem]">
           <div className="flex flex-col">
