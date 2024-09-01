@@ -12,7 +12,7 @@ export default function Footer() {
                     <h2>Home</h2>
                     <h2>Company</h2>
                     <h2>Expertise</h2>
-                    <h2>  Project</h2>
+                    <h2>Project</h2>
                     <h2>Solutions</h2>
                     <h2>Responsibility</h2>
                 </div>

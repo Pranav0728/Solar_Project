@@ -3,7 +3,8 @@ import "./globals.css";
 import { Courgette } from 'next/font/google';
 import { Rokkitt } from 'next/font/google';
 import { Oswald } from 'next/font/google';
-
+import Header from "@/components/Header";
+import Footer from "@/components/footer";
 
 
 
@@ -34,7 +35,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={courgette.className}>{children}</body>
+      <body className="w-full flex justify-center flex-col items-center" >
+        <Header />
+        <div className={courgette.className}>{children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

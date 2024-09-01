@@ -11,7 +11,6 @@ export default function Home() {
       <Landingpage2/>
       <Landingpage3/>
       <Landingpage4/>
-      <Footer/>
     </main>
   );
 }
