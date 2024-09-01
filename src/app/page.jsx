@@ -4,6 +4,7 @@ import Landingpage2 from "@/components/landingpage2";
 import Landingpage3 from "@/components/landingpage3";
 import Footer from "@/components/footer";
 import Landingpage4 from "@/components/landingpage4";
+import Landingpage5 from "@/components/landingpage5";
 export default function Home() {
   return (
     <main className="">
@@ -11,6 +12,7 @@ export default function Home() {
       <Landingpage2/>
       <Landingpage3/>
       <Landingpage4/>
+      <Landingpage5/>
     </main>
   );
 }
