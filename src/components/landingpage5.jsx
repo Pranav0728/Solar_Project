@@ -28,13 +28,13 @@ export default function Landingpage5() {
         <source src="../assets/solarvedio.mp4" type="video/mp4" />
       </video>
            </div>
-           <div className="h-[100%] w-[50%] bg-slate-500 p-11 ">
+           <div className="h-[100%] w-[50%] p-14 flex flex-col gap-[1vw]">
             <h3>SOLUTIONS</h3>
             <h2>WE PLAN , WE BUILD , WE DEVELOP</h2>
             <p>We offer a comprehensive array of services, from the planning stage to post-construction facility management. You can count on the utmost professionalism in all that we do.</p>
-            <div className="h-[9vw] w-[9vw]  border-[2px] border-[rgba(255,255,255,1)]  rounded-full items-center flex flex-col justify-center ">
-                <h5 className="font-thin text-[rgba(255,255,255,1)]">EXPLORE </h5>
-                <h5 className="font-thin text-[rgba(255,255,255,1)]">SECTORS </h5>
+            <div className="h-[9vw] w-[9vw]  border-[2px] border-[rgba(0,0,0,1)] absolute bottom-10 rounded-full items-center flex flex-col justify-center ">
+                <h5 className="font-thin text-[rgba(0,0,0,1)]">EXPLORE </h5>
+                <h5 className="font-thin text-[rgba(0,0,0,1)]">SECTORS </h5>
             </div>
            </div>
         </div>
