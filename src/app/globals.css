@@ -34,6 +34,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+body{
+  background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169));
+}
 
 .is-sticky {
   backdrop-filter: blur(50px);
@@ -56,6 +59,77 @@
 
 
 }
+
+.header{
+  background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169));
+
+
+}
+
+.HamBurgerIcon{
+  z-index: 1200;
+}
+.label{
+  display:flex;
+  flex-direction:column;
+  width:3rem;
+  cursor:pointer;
+  justify-items: center;   
+ }
+ 
+ .label .span{
+  background: white;
+  border-radius:50px;
+  height:3px;
+  margin: 7% 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  margin-left: 0.5rem;
+ 
+ }
+ 
+ .span:nth-of-type(1){
+   width:70%;
+   
+ }
+ .span:nth-of-type(2){
+   width:70%;
+ }
+ 
+ 
+ .span:nth-of-type(3){
+   width:70%;
+  
+ }
+ 
+ 
+.input[type="checkbox"]{
+   display:none;
+ }
+ 
+ 
+ .input[type="checkbox"]:checked ~ .span:nth-of-type(1){
+    background-color: white;
+   transform-origin:bottom;
+   transform:rotatez(45deg) translate(5px,0px)
+ }
+ 
+ 
+ .input[type="checkbox"]:checked ~ .span:nth-of-type(2){
+  background-color: white;
+
+   transform-origin:  top;
+   transform:rotatez(-45deg)
+ }
+ 
+ 
+.input[type="checkbox"]:checked ~ .span:nth-of-type(3){
+  background-color: white;
+
+   transform-origin:bottom;
+   width:50%;
+   transform: translate(17px,-3px) rotatez(45deg);
+ 
+ }
 
 /* OnScroll Animation  */
 .hidden1{
@@ -246,7 +320,162 @@ transform:translateY(0px);
 
   border-radius: 5%;
 }
+.menuItems{
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  /* .Sub-SideNav {
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    z-index: 1000;
+    bottom: 0;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 100%; */
+    /* height: 100%; 
+    box-shadow: var(--shadow-box);
+    transition: all 500ms ease-in-out; Unified transition property */
+  /* } */
+  
+  .Sub-SideNav-on-click {
+    /* display: flex;
+    z-index: 1000;
+    bottom: 0%;
+    left: 0;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    box-shadow: var(--shadow-box);
+    transition: all 500ms ease-in-out;  */
+  }
+  
+  .menuItems {
+    /* display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #00042a, #1e3a8a);
+    width: 100%;
+    height: 111vh;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -3rem;
+    color: white; */
+  }
+  .menuItems h4{
+    font-size: 2.3rem;
+  }
 
 
+
+}
+
+@media (min-width: 768px) {
+  .HamBurgerIcon{
+    display: flex;
+  }
+  .Sub-SideNav {
+    /* background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    z-index: 1000;
+    bottom: 0;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 100%; */
+    height: 100%; /* Changed to vh for consistency */
+    /* box-shadow: var(--shadow-box);
+    transition: all 500ms ease-in-out; Unified transition property */
+  }
+  
+  .Sub-SideNav-on-click {
+    /* display: flex;
+    z-index: 1000;
+    bottom: 0%;
+    left: 0;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    box-shadow: var(--shadow-box); */
+    transition: all 500ms ease-in-out; /* Unified transition property */
+  }
+  
+  .menuItems {
+    /* display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #00042a, #1e3a8a);
+    width: 100%;
+    height: 111vh;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -3rem;
+    color: white; */
+  }
+  .menuItems h4{
+    font-size: 2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .HamBurgerIcon{
+
+    display: flex;
+  }
+  .Sub-SideNav {
+    /* background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    z-index: 1000;
+    bottom: 0;
+    left: 100%;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%; Changed to vh for consistency */
+    /* transition: all 500ms ease-in-out; Unified transition property */
+  }
+  
+  .Sub-SideNav-on-click {
+    /* display: flex;
+    z-index: 1000;
+    bottom: 0%;
+    left: 0;
+    position: fixed;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #5b21b6, #1e3a8a);
+    box-shadow: var(--shadow-box); */
+    /* transition: all 500ms ease-in-out; Unified transition property */
+  }
+  
+  .menuItems {
+    /* display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #00042a, #1e3a8a);
+    width: 100%;
+    height: 111vh;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -3rem;
+    color: white; */
+  }
+  .menuItems h4{
+    font-size: 1.6rem;
+  }
+
+
+}
 
 

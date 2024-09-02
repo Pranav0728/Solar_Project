@@ -38,7 +38,7 @@ export default  function Header() {
   }, );
 
   return (
-    <div className="fixed Header w-[95%] header-section top-0 flex justify-center mt-5 z-50 border rounded-[10rem]  lg:backdrop-blur-sm">
+    <div className=" Header w-[92%] md:w-[98%] header-section top-0 flex justify-center mt-5 z-50 border rounded-[10rem] ">
       <div className="lg:h-[10.5vh] h-[11vh] w-full  flex justify-between items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div className="flex items-center gap-2 w-[20rem]">
           <div className="flex flex-col">
@@ -47,21 +47,26 @@ export default  function Header() {
         </div>
 
         <div className="hidden uppercase w-[45%] xl:flex justify-start text-n-1 transition-colors hover:text-color-1">
-          <ul className="flex justify-center gap-15 text-xs text-neutral-100">
-            <Link href="/" className="cursor-pointer hover:text-white text-[1rem]">
-              Home
+          <ul className="flex w-full justify-center gap-15 text-xs text-neutral-100">
+            <Link href="/" className="cursor-pointer hover:text-white text-[0.9rem]">
+            <div className="flex flex-nowrap">              <p>Home</p>
+            </div>
             </Link>
-            <Link href="/about-us" className="cursor-pointer hover:text-white text-[1rem]">
-              Solar Calculator
+            <Link href="/about-us" className="cursor-pointer hover:text-white text-[0.9rem]">
+            <div className="flex flex-nowrap">              <p>Solar Calculator</p>
+            </div>
             </Link>
-            <Link href="/our-work" className="cursor-pointer hover:text-white text-[1rem]">
-              About Us
+            <Link href="/our-work" className="cursor-pointer hover:text-white text-[0.9rem]">
+            <div className="flex flex-nowrap">              <p>Our Work</p>
+            </div>
             </Link>
-            <Link href="/contact-us" className="cursor-pointer hover:text-white text-[1rem]">
-              Contact us
+            <Link href="/contact-us" className="cursor-pointer hover:text-white text-[0.9rem]">
+            <div className="flex flex-nowrap">              <p>About Us</p>
+            </div>
             </Link>
-            <Link href="/our-work" className="cursor-pointer hover:text-white text-[1rem]">
-              Our Work
+            <Link href="/contact-us" className="cursor-pointer hover:text-white text-[0.9rem]">
+            <div className="flex flex-nowrap">              <p>Contact Us</p>
+            </div>
             </Link>
           </ul>
         </div>
