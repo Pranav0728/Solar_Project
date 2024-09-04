@@ -29,7 +29,7 @@ export default function Landingpage3() {
     return (
       <>
       <div className=" w-[100%] h-[100vh]  p-11 page3 pt-0 ">
-          <div className="inpage3 w-[100%] h-[100%] hidden1 flex   rounded-2xl relative overflow-hidden p-8 lg:pl-14 pt-[5%] bg-white">
+          <div className="w-full h-full inpage3  hidden1 flex   rounded-2xl relative overflow-hidden p-8 lg:pl-14 pt-[5%] bg-white">
              <div className="text-white ininp3" >
                 <h3 className="text-white">SECTORS</h3>
                 <h2 className="hidden2">Our Services</h2>

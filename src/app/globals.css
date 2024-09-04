@@ -7,6 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+body{
+  width: 200px;
+}
 .menuItems{
   display: none;
 }
@@ -47,6 +50,7 @@ body{
   display: flex;
   align-items: center;
   height: 10%;
+ 
   /* background: linear-gradient(135deg, rgba(17, 13, 29, 0.1), rgba(22, 18, 37, 0.1)); */
   /* background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169)); */
   background-color: rgb(228, 164, 85) ;
@@ -60,14 +64,53 @@ body{
 
 }
 
+
+
+.looder{
+  z-index: 99;
+  background-color: transparent;
+  transition: all linear;
+  pointer-events: none;
+    h3{
+      font-size: 60px;
+      font-family: europa;
+      mix-blend-mode: difference;
+      transition: all linear ;
+    }
+   hr{
+    box-shadow: 0px 0px 10px #e3a558;
+   }
+}
+.upbox{
+  transition: all linear;
+  animation-name: flashes;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+.downbox{
+  transition: all linear;
+  animation-name: flashes;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+
+
+@keyframes flashes {
+  0%   {background-color: white;}
+  50%  {background-color: black;}
+  75%  {background-color: white;}
+  100% {background-color: black;}
+  
+}
+
 .header{
   background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169));
-
+ z-index: 90;
 
 }
 
 .HamBurgerIcon{
-  z-index: 1200;
+  z-index: 90;
 }
 .label{
   display:flex;
@@ -195,6 +238,12 @@ transform:translateY(0px);
 
 .landingpage{
   background-image: linear-gradient(to right, #d3c0ab,rgb(228, 164, 85) , rgb(211, 191, 169));
+  
+}
+
+h2:hover{
+  color: rgb(45, 71, 118);
+  mix-blend-mode: difference;
 }
 
 .indiv{
@@ -222,6 +271,7 @@ transform:translateY(0px);
   z-index: 5;
   
 }
+
 .downbutton{
   border: 2px solid white;
   background-color: transparent;
@@ -229,7 +279,7 @@ transform:translateY(0px);
 }
 
 .page2imgdiv{
-  background: url(../assets/aboutnew.jpg);
+  background: url(../assets/number1sol.avif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -319,6 +369,9 @@ transform:translateY(0px);
 .page4img{
 
   border-radius: 5%;
+}
+.p4img{
+  object-fit: cover;
 }
 .menuItems{
   display: none;
@@ -426,9 +479,56 @@ transform:translateY(0px);
   }
 
 }
+.page5{
+  
+  h2{
+    font-size: 50px;
+    max-width: 80%;
+    line-height: 100%;
+  }
+  p{
+    margin-top: 10%;
+    bottom: 10%;
+    max-width: 70%;
+    font-size: 20px;
+  }
+}
 
+.page6{
+  background-color: rgb(206, 205, 201);
+  height: auto;
+  h2{
+    font-size: 40px;
+  }
+  p{
+    max-width: 40%;
+    
+  }
+  h3{
+    font-size: 20px;
+  }
+  hr{
+    border: 0.5px solid black;
+  }
+}
+
+.imgpage7{
+  object-fit: cover;
+}
+
+.cardspage7{
+  padding: 20px;
+  h2{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 20px;
+  }
+}
 
 @media screen and (max-width: 640px) {
+   
+   
   .HamBurgerIcon{
 
     display: flex;
@@ -541,6 +641,8 @@ transform:translateY(0px);
     bottom: 1rem;
   }
  
+
+
 }
 
 .p4b{
@@ -551,21 +653,51 @@ transform:translateY(0px);
   object-fit: cover;
 }
 
+.page7{
+  height: auto;
 }
-
+.cardspage7{
+  padding: 0%;
+}
 .page5{
-  
+  height: auto;
+}
+.inp5{
+  flex-direction: column;
+ 
+}
+.p5a{
+  width: 100%;
+}
+.p5b{
+  width: 100%;
+  padding: 10%;
+  h3{
+    font-size: 10px;
+  }
+ 
+ 
+}
+.page5{
   h2{
-    font-size: 50px;
     max-width: 80%;
-    line-height: 100%;
+    font-size: 25px;
   }
   p{
-    margin-top: 10%;
-    bottom: 10%;
-    max-width: 70%;
-    font-size: 20px;
+    max-width: 100%;
+    font-size: 10px;
+    margin: 0;
+    position: relative;
   }
+  
+}
+.p5button{
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  gap: 10px;
+  bottom: 0%;
+  margin-top: 20px;
 }
 
 .page6{
@@ -585,16 +717,39 @@ transform:translateY(0px);
     border: 0.5px solid black;
   }
 }
-
-.imgpage7{
-  object-fit: cover;
+.inp6{
+  gap: 20px;
+}
+.p7map{
+  flex-direction: column;
+   
+  p{
+    max-width: 100%;
+    font-size: 10px;
+  }
 }
 
-.cardspage7{
+.cardspage7 {
+  padding: 20px;
   h2{
-    font-size: 50px;
+    bottom: 40%;
+    font-size: 30px;
   }
   h3{
-    font-size: 20px;
+    font-size: 15px;
   }
 }
+
+
+.midfoot{
+  flex-direction: column;
+}
+.inmid{
+  flex-direction: row;
+}
+
+
+
+}
+
+
