@@ -370,7 +370,9 @@ transform:translateY(0px);
     font-size: 2.3rem;
   }
 
-
+.page5{
+  background-color: rgb(206, 205, 201);
+}
 
 }
 
@@ -474,8 +476,125 @@ transform:translateY(0px);
   .menuItems h4{
     font-size: 1.6rem;
   }
+ 
+  .p2box ,.page4{
+    flex-direction: column;
+    
+    h3{
+      font-size: 10px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    p{
+      font-size: 10px;
+      max-width: 100%;
+    }
+  }
+  .p2a,.p4a{
+    width: 100%;
+  }
+  .p2button{
+    margin-top: 36px;
+    width: 100%;
+  }
+  
+  .p2b,.p4b{
+    width: 100%;
+  }
+ .page3{
+  height: 40vh;
+ }
+  .inpage3,.page4{
+    flex-direction: column;
+  }
+  .ininp3{
+    width: 100%;
+    p{
+      font-size: 10px;
+      max-width: 100%;
+      position: relative;
+    }
+  }
+ .p3button{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  left: 0%;
+  position: relative;
+  
+ }
+.page4{
+  height: 60vh;
+  
+}
+.p4a{
+  height: 40%;
+  gap:10px;
+  h2{
+    font-size: 20px;
+  }
+  p{
+    margin-top: -60px;
+    bottom: 1rem;
+  }
+ 
+}
 
+.p4b{
+  height: 60%;
+  
+}
+.p4img{
+  object-fit: cover;
+}
 
 }
 
+.page5{
+  
+  h2{
+    font-size: 50px;
+    max-width: 80%;
+    line-height: 100%;
+  }
+  p{
+    margin-top: 10%;
+    bottom: 10%;
+    max-width: 70%;
+    font-size: 20px;
+  }
+}
 
+.page6{
+  background-color: rgb(206, 205, 201);
+  height: auto;
+  h2{
+    font-size: 40px;
+  }
+  p{
+    max-width: 40%;
+    
+  }
+  h3{
+    font-size: 20px;
+  }
+  hr{
+    border: 0.5px solid black;
+  }
+}
+
+.imgpage7{
+  object-fit: cover;
+}
+
+.cardspage7{
+  h2{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 20px;
+  }
+}
