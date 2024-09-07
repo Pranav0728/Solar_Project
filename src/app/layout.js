@@ -5,8 +5,7 @@ import { Rokkitt } from 'next/font/google';
 import { Oswald } from 'next/font/google';
 import Header from "@/components/Header";
 import Footer from "@/components/footer";
-
-
+import Looder from "@/components/looder";
 
 const inter = Inter({ subsets: ["latin"] });
 const courgette = Courgette({ 
@@ -35,12 +34,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-full flex justify-center flex-col items-center" >
-        <Header />
-        <div className={courgette.className}>{children}
+      
+      <body className="w-[100%] overflow-x-hidden flex justify-center flex-col items-center " >
+     
+         <Looder/>
+        <div className={inter.className}>{children}
           <Footer />
         </div>
+       
       </body>
+     
     </html>
   );
 }

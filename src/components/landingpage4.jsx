@@ -30,19 +30,19 @@ export default function Landingpage4() {
     {
         num:"01",
         headline:"Solar Rooftop PV System",
-        src:"/images/aboutnew.jpg",
+        src:"/images/solar1img.jpeg",
         paragraph:"Use this space to promote the business, its products or its services. Help people become familiar with the business and its offerings, creating a sense of connection and trust. Focus on what makes the business unique and how users can benefit from choosing it.",
     },
     {
         num:"01",
         headline:"Solar Rooftop PV System",
-        src:"/images/aboutnew.jpg",
+        src:"/images/solarimg2.jpeg",
         paragraph:"Use this space to promote the business, its products or its services. Help people become familiar with the business and its offerings, creating a sense of connection and trust. Focus on what makes the business unique and how users can benefit from choosing it.",
       },
     {
         num:"01",
         headline:"Solar Rooftop PV System",
-        src:"/images/aboutnew.jpg",
+        src:"/images/solar3img.jpeg",
         paragraph:"Use this space to promote the business, its products or its services. Help people become familiar with the business and its offerings, creating a sense of connection and trust. Focus on what makes the business unique and how users can benefit from choosing it.",
      }
    ]
@@ -51,10 +51,10 @@ export default function Landingpage4() {
     return (
       <>
      
-      <div className=" w-[100%] h-[auto] flex flex-col gap-11 p-11 pt-0 landpage4 ">
+      <div className=" w-[100%] h-[auto] flex flex-col gap-11 pt-0 p-11  landpage4 ">
      
       {feature.map((feature, index) => (
-          <div key={index} className=" w-[100%] h-[60vh]  flex landing4 page4  rounded-2xl relative overflow-hidden p-8 lg:pl-14 bg-white">
+          <div key={index} className=" w-full h-[60vh]  flex landing4 page4  rounded-2xl relative overflow-hidden p-8 lg:pl-14 bg-white">
              <div className="text-black flex flex-col w-[60%] h-[100%] hidden3 p4a" >
                 <h3>{feature.num}</h3>
                 <h2>{feature.headline}</h2>
