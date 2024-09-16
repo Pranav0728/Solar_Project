@@ -576,7 +576,10 @@ h2:hover{
   .menuItems h4{
     font-size: 1.6rem;
   }
- 
+ .landingpage{
+  padding-top: 20px;
+  padding-bottom: 0px;
+ }
   .p2box ,.page4{
     flex-direction: column;
     

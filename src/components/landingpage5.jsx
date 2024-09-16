@@ -5,8 +5,8 @@ import aboutnew from "../assets/aboutnew.jpg";
 import abcd from '../assets/getquote.jpg';
 
 import React, { useRef, useEffect } from 'react';
-import Video from 'next-video';
-import MuxPlayer from '@mux/mux-player-react';
+
+
 export default function Landingpage5() {
 
     const videoRef = useRef(null);
@@ -25,15 +25,7 @@ export default function Landingpage5() {
            <div className="h-[100%] w-[50%] bg-black rounded-2xl p5a overflow-hidden">
          
 
-    <MuxPlayer
-  streamType="on-demand"
-  playbackId="8AXotMAvOyP4Hh5BnXAveLLz9hYvR22LkMO6XP25Fd8"
-  metadataVideoTitle="Placeholder (optional)"
-  metadataViewerUserId="Placeholder (optional)"
-  primaryColor="#FFFFFF"
-  secondaryColor="#000000"
-  className="w-[100%]"
-/>
+ 
         </div>
            <div className="h-[100%] w-[50%] lg:p-14 p5b flex flex-col gap-[1vw]">
             <h3>SOLUTIONS</h3>

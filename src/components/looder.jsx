@@ -45,10 +45,7 @@ export default function Looder() {
                     duration:2,
                    
                 },'b')
-                gsap.to('.loader',{
-                    display:"none",
-                    
-                })
+                
             },
             { scope: container }
         );
